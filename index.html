@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Tarun Matta - Cinematic video editor, photographer, and cinematographer portfolio."
+  />
+  <title>Tarun Matta | Cinematic Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#hero">Tarun Matta</a>
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Tools</a></li>
+          <li><a href="#work">Best Work</a></li>
+          <li><a href="#instagram">Instagram</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-glow hero-glow-a" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-b" aria-hidden="true"></div>
+      <div class="container hero-content reveal">
+        <p class="hero-kicker">Video Editor | Photographer | Cinematographer</p>
+        <h1>Tarun Matta</h1>
+        <p class="hero-subtitle">Cinematic Storytelling Through Edits</p>
+        <p class="typing-row">
+          <span class="typing-prefix">Role:</span>
+          <span id="typed-role" class="typed-role" aria-live="polite"></span>
+          <span class="typing-cursor" aria-hidden="true"></span>
+        </p>
+
+        <div class="hero-meta">
+          <span>Age 18</span>
+          <span>Class 11th</span>
+          <span>Lala Sarkaru Mal School</span>
+          <span>2 Years Experience</span>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#work">View Work</a>
+          <a class="btn btn-ghost" href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">About</p>
+          <h2>Song-style edits with cinematic impact</h2>
+        </header>
+
+        <div class="about-grid">
+          <article class="glass-card reveal">
+            <h3>Who I Am</h3>
+            <p>
+              I am Tarun Matta, an 18-year-old creator focused on music-video style edits,
+              visual storytelling, and cinematic pacing. Over the last 2 years, I have
+              developed a workflow that blends clean transitions, mood-driven color grading,
+              and emotionally timed cuts.
+            </p>
+          </article>
+
+          <article class="glass-card reveal">
+            <h3>Creative Specialization</h3>
+            <p>
+              My signature look includes the Raven Effect from Highsfield AI and
+              Clone Effect compositions for dramatic scenes. I combine AI-assisted concepting
+              with manual editing to deliver premium, stylized results.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Tools</p>
+          <h2>Editing stack and creative toolkit</h2>
+        </header>
+
+        <div class="tools-grid">
+          <article class="tool-card reveal">
+            <span class="tool-icon" aria-hidden="true">CC</span>
+            <h3>CapCut</h3>
+            <p>Fast-turnaround cuts, transitions, and social-ready cinematic edits.</p>
+          </article>
+          <article class="tool-card reveal">
+            <span class="tool-icon" aria-hidden="true">PR</span>
+            <h3>Adobe Premiere Pro</h3>
+            <p>Advanced sequencing, audio sync, and polished timeline control.</p>
+          </article>
+          <article class="tool-card reveal">
+            <span class="tool-icon" aria-hidden="true">LR</span>
+            <h3>Lightroom</h3>
+            <p>Photo correction, cinematic color mood, and visual consistency.</p>
+          </article>
+          <article class="tool-card reveal">
+            <span class="tool-icon" aria-hidden="true">GPT</span>
+            <h3>ChatGPT</h3>
+            <p>Thumbnail ideation and concept development for story direction.</p>
+          </article>
+          <article class="tool-card reveal">
+            <span class="tool-icon" aria-hidden="true">AI</span>
+            <h3>Highsfield AI</h3>
+            <p>Photo-to-video outputs, Raven Effect styling, and visual experimentation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Best Work</p>
+          <h2>Featured cinematic edits</h2>
+        </header>
+
+        <div class="work-grid">
+          <article class="work-card reveal">
+            <video class="work-video" controls preload="metadata" playsinline>
+              <source src="videos/video1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h3>Cinematic Song-Style Edit</h3>
+            <p>A smooth, emotional edit synced perfectly with cinematic music. Clean transitions, dramatic color grading, and aesthetic slow-motion shots for a powerful storytelling vibe.</p>
+          </article>
+
+          <article class="work-card reveal">
+            <video class="work-video" controls preload="metadata" playsinline>
+              <source src="videos/video2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h3>Dark Cinematic Song Edit</h3>
+            <p>Moody atmosphere with deep shadows, intense beat sync, sharp cuts, and dramatic sound design. Perfect for aggressive car edits or high-energy reels.</p>
+          </article>
+
+          <article class="work-card reveal">
+            <video class="work-video" controls preload="metadata" playsinline>
+              <source src="videos/video3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h3>Raven + Clone Effect Edit</h3>
+            <p>A creative VFX-style edit featuring raven overlays, clone duplication effects, ghost trails, and layered compositions. Ideal for mysterious, supernatural, or high-impact edits.</p>
+          </article>
+
+          <article class="work-card reveal">
+            <video class="work-video" controls preload="metadata" playsinline>
+              <source src="videos/video4.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h3>Advanced Cinematic Keyframe Edit</h3>
+            <p>Precision keyframing with dynamic zooms, camera shakes, motion blur, custom transitions, and layered effects. Fully beat-synced with smooth cinematic flow.</p>
+          </article>
+
+          <article class="work-card reveal">
+            <video class="work-video" controls preload="metadata" playsinline>
+              <source src="videos/video5.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h3>Speed Ramping + Transition Edit</h3>
+            <p>Fast-paced, energetic edit using professional speed ramping, smooth transitions, whip pans, and seamless motion effects. Perfect for reels that demand attention instantly.</p>
+          </article>
+
+          <article class="work-card reveal">
+            <video class="work-video" controls preload="metadata" playsinline>
+              <source src="videos/video6.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h3>Professional Song Shoot Edit</h3>
+            <p>Moody tones, sharp cuts, dramatic lighting effects, and intense beat synchronization for a powerful visual impact.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="instagram" class="section">
+      <div class="container insta-wrap">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Instagram</p>
+          <h2>Follow my latest edits and visuals</h2>
+        </header>
+
+        <article class="instagram-card glass-card reveal">
+          <div class="ig-avatar" aria-hidden="true">TM</div>
+          <div class="ig-content">
+            <h3>@matta.editzz</h3>
+            <p>Cinematic song edits, short reels, and creative experiments.</p>
+            <a
+              class="btn btn-primary"
+              href="https://www.instagram.com/matta.editzz/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Visit @matta.editzz
+            </a>
+            <p class="ig-secondary-link">
+              Also on:
+              <a
+                href="https://www.instagram.com/tarunmatta_tm"
+                target="_blank"
+                rel="noreferrer"
+              >
+                @tarunmatta_tm
+              </a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Contact</p>
+          <h2>Let us create your next cinematic story</h2>
+        </header>
+
+        <div class="contact-layout">
+          <article class="glass-card reveal">
+            <h3>Direct Email</h3>
+            <p>
+              Reach me anytime:
+              <a href="mailto:mattatarun24@gmail.com">mattatarun24@gmail.com</a>
+            </p>
+            <p class="muted">
+              Available for editing projects, reels, music visuals, and creative collaborations.
+            </p>
+          </article>
+
+         
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; 2026 Tarun Matta</p>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/matta.editzz/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://www.instagram.com/tarunmatta_tm" target="_blank" rel="noreferrer">Second Profile</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
